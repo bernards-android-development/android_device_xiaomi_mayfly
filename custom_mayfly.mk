@@ -15,6 +15,10 @@ TARGET_SCREEN_WIDTH := 1080
 # Inherit from mayfly device
 $(call inherit-product, device/xiaomi/mayfly/device.mk)
 
+# MiuiCamera
+$(call inherit-product, device/xiaomi/miuicamera-mayfly/device.mk)
+$(call inherit-product, device/xiaomi/miuicamera-mayfly/BoardConfig.mk)
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := mayfly
 PRODUCT_MANUFACTURER := Xiaomi
