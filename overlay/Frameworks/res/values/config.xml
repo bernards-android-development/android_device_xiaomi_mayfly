@@ -22,6 +22,66 @@
     <item format="float" name="config_screenBrightnessSettingDefaultFloat" type="dimen">0.07496032</item>
     <item format="float" name="config_screenBrightnessDimFloat" type="dimen">0.000915639</item>
 
+    <!-- Debounce: brighten faster, darken slower -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1200</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">3200</integer>
+
+    <!-- Sensor rate: keep responsive but not too nervous -->
+    <integer name="config_autoBrightnessLightSensorRate">250</integer>
+    <integer name="config_autoBrightnessInitialLightSensorRate">-1</integer>
+
+    <!-- Ambient hysteresis buckets -->
+    <integer-array name="config_ambientThresholdLevels">
+        <item>2</item>
+    	<item>5</item>
+    	<item>10</item>
+		<item>20</item>
+		<item>50</item>
+		<item>100</item>
+		<item>200</item>
+		<item>500</item>
+		<item>1000</item>
+		<item>2000</item>
+		<item>5000</item>
+		<item>10000</item>
+    </integer-array>
+
+    <!-- Brightening thresholds: lower value = easier to brighten, higher = more conservative.
+        This set is intentionally conservative in low lux to reduce jitter. -->
+    <integer-array name="config_ambientBrighteningThresholds">
+        <item>4200</item>
+        <item>3200</item>
+        <item>2200</item>
+        <item>1400</item>
+        <item>900</item>
+        <item>650</item>
+        <item>500</item>
+        <item>380</item>
+        <item>300</item>
+        <item>240</item>
+        <item>180</item>
+        <item>140</item>
+        <item>120</item>
+    </integer-array>
+
+    <!-- Darkening thresholds: smaller values here mean darkening requires a larger sustained drop.
+        Tuned to be slower/more stable than brightening. -->
+    <integer-array name="config_ambientDarkeningThresholds">
+        <item>700</item>
+        <item>620</item>
+        <item>560</item>
+        <item>500</item>
+        <item>430</item>
+        <item>380</item>
+        <item>340</item>
+        <item>300</item>
+        <item>270</item>
+        <item>240</item>
+        <item>210</item>
+        <item>190</item>
+        <item>170</item>
+    </integer-array>
+
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
          (1-based arrays)
@@ -174,114 +234,114 @@
     <array name="config_autoBrightnessDisplayValuesNits">
         <item>2.9</item>
         <item>3.5</item>
-        <item>3.8</item>
-        <item>17.6</item>
-        <item>24.3</item>
-        <item>29.7</item>
-        <item>34.0</item>
-        <item>46.0</item>
-        <item>59.0</item>
-        <item>76.0</item>
-        <item>81.0</item>
+        <item>4.2</item>
+        <item>6.8</item>
+        <item>10.0</item>
+        <item>13.5</item>
+        <item>17.0</item>
+        <item>23.0</item>
+        <item>30.0</item>
+        <item>38.0</item>
+        <item>47.0</item>
+        <item>55.0</item>
+        <item>62.0</item>
+        <item>68.0</item>
+        <item>73.0</item>
+        <item>77.0</item>
+        <item>80.0</item>
         <item>82.0</item>
-        <item>82.0</item>
-        <item>82.0</item>
-        <item>83.0</item>
-        <item>83.0</item>
-        <item>83.0</item>
         <item>84.0</item>
-        <item>84.0</item>
-        <item>85.0</item>
-        <item>85.0</item>
-        <item>85.0</item>
-        <item>85.0</item>
-        <item>86.0</item>
-        <item>86.0</item>
-        <item>87.0</item>
-        <item>89.0</item>
-        <item>90.0</item>
-        <item>91.0</item>
-        <item>93.0</item>
+        <item>85.5</item>
+        <item>86.5</item>
+        <item>87.5</item>
+        <item>88.5</item>
+        <item>89.5</item>
+        <item>90.5</item>
+        <item>92.0</item>
         <item>94.0</item>
         <item>96.0</item>
-        <item>97.0</item>
-        <item>99.0</item>
+        <item>98.0</item>
         <item>100.0</item>
-        <item>101.0</item>
+        <item>102.0</item>
         <item>104.0</item>
-        <item>105.0</item>
         <item>106.0</item>
         <item>108.0</item>
-        <item>109.0</item>
-        <item>111.0</item>
+        <item>110.0</item>
         <item>112.0</item>
         <item>114.0</item>
         <item>116.0</item>
-        <item>137.0</item>
-        <item>157.0</item>
-        <item>180.0</item>
-        <item>205.0</item>
-        <item>226.0</item>
-        <item>257.0</item>
-        <item>280.0</item>
+        <item>118.0</item>
+        <item>120.0</item>
+        <item>122.0</item>
+        <item>124.0</item>
+        <item>126.0</item>
+        <item>128.0</item>
+        <item>130.0</item>
+        <item>150.0</item>
+        <item>172.0</item>
+        <item>195.0</item>
+        <item>218.0</item>
+        <item>240.0</item>
+        <item>262.0</item>
+        <item>282.0</item>
         <item>295.0</item>
-        <item>369.0</item>
-        <item>400.0</item>
+        <item>340.0</item>
+        <item>380.0</item>
         <item>416.7</item>
-        <item>433.3</item>
         <item>450.0</item>
-        <item>466.7</item>
         <item>483.3</item>
-        <item>500.0</item>
-        <item>512.5</item>
-        <item>525.0</item>
-        <item>537.5</item>
+        <item>516.7</item>
         <item>550.0</item>
-        <item>562.5</item>
-        <item>575.0</item>
-        <item>587.5</item>
-        <item>600.0</item>
+        <item>570.0</item>
+        <item>590.0</item>
         <item>610.0</item>
-        <item>620.0</item>
         <item>630.0</item>
-        <item>640.0</item>
         <item>650.0</item>
-        <item>660.0</item>
-        <item>670.0</item>
+        <item>665.0</item>
         <item>680.0</item>
-        <item>690.0</item>
-        <item>700.0</item>
-        <item>705.0</item>
+        <item>695.0</item>
         <item>710.0</item>
-        <item>715.0</item>
         <item>720.0</item>
-        <item>725.0</item>
         <item>730.0</item>
-        <item>735.0</item>
         <item>740.0</item>
-        <item>745.0</item>
         <item>750.0</item>
-        <item>755.0</item>
-        <item>760.0</item>
-        <item>765.0</item>
-        <item>770.0</item>
-        <item>775.0</item>
+        <item>758.0</item>
+        <item>766.0</item>
+        <item>774.0</item>
+        <item>782.0</item>
+        <item>790.0</item>
         <item>800.0</item>
-        <item>816.7</item>
-        <item>833.3</item>
-        <item>850.0</item>
-        <item>866.7</item>
-        <item>883.3</item>
+        <item>812.0</item>
+        <item>824.0</item>
+        <item>836.0</item>
+        <item>848.0</item>
+        <item>860.0</item>
+        <item>870.0</item>
+        <item>880.0</item>
+        <item>890.0</item>
         <item>900.0</item>
-        <item>914.3</item>
-        <item>928.6</item>
-        <item>942.9</item>
-        <item>957.1</item>
-        <item>971.4</item>
-        <item>985.7</item>
+        <item>910.0</item>
+        <item>920.0</item>
+        <item>930.0</item>
+        <item>940.0</item>
+        <item>950.0</item>
+        <item>960.0</item>
+        <item>970.0</item>
+        <item>978.0</item>
+        <item>984.0</item>
+        <item>989.0</item>
+        <item>993.0</item>
+        <item>996.0</item>
+        <item>998.0</item>
+        <item>999.0</item>
+        <item>999.2</item>
+        <item>999.4</item>
+        <item>999.6</item>
+        <item>999.8</item>
+        <item>999.9</item>
         <item>1000.0</item>
     </array>
-
+    
     <!-- Type of the udfps long press sensor. Empty if long press is not supported. -->
     <string name="config_dozeUdfpsLongPressSensorType" translatable="false">org.lineageos.sensor.udfps</string>
 
