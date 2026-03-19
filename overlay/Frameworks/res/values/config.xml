@@ -23,8 +23,8 @@
     <item format="float" name="config_screenBrightnessDimFloat" type="dimen">0.000915639</item>
 
     <!-- Debounce: brighten faster, darken slower -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">1200</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">3200</integer>
+    <integer name="config_autoBrightnessBrighteningLightDebounce">1400</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">1600</integer>
 
     <!-- Sensor rate: keep responsive but not too nervous -->
     <integer name="config_autoBrightnessLightSensorRate">250</integer>
@@ -33,53 +33,53 @@
     <!-- Ambient hysteresis buckets -->
     <integer-array name="config_ambientThresholdLevels">
         <item>2</item>
-    	<item>5</item>
-    	<item>10</item>
-		<item>20</item>
-		<item>50</item>
-		<item>100</item>
-		<item>200</item>
-		<item>500</item>
-		<item>1000</item>
-		<item>2000</item>
-		<item>5000</item>
-		<item>10000</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
     </integer-array>
 
     <!-- Brightening thresholds: lower value = easier to brighten, higher = more conservative.
         This set is intentionally conservative in low lux to reduce jitter. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>4200</item>
-        <item>3200</item>
-        <item>2200</item>
-        <item>1400</item>
-        <item>900</item>
-        <item>650</item>
-        <item>500</item>
-        <item>380</item>
-        <item>300</item>
-        <item>240</item>
-        <item>180</item>
-        <item>140</item>
-        <item>120</item>
+        <item>4600</item>
+        <item>3400</item>
+        <item>2400</item>
+        <item>1700</item>
+        <item>1150</item>
+        <item>820</item>
+        <item>620</item>
+        <item>470</item>
+        <item>360</item>
+        <item>285</item>
+        <item>215</item>
+        <item>165</item>
+        <item>135</item>
     </integer-array>
 
     <!-- Darkening thresholds: smaller values here mean darkening requires a larger sustained drop.
         Tuned to be slower/more stable than brightening. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>700</item>
-        <item>620</item>
+        <item>1200</item>
+        <item>1050</item>
+        <item>900</item>
+        <item>780</item>
+        <item>650</item>
         <item>560</item>
-        <item>500</item>
-        <item>430</item>
-        <item>380</item>
-        <item>340</item>
+        <item>480</item>
+        <item>410</item>
+        <item>350</item>
         <item>300</item>
-        <item>270</item>
-        <item>240</item>
-        <item>210</item>
-        <item>190</item>
-        <item>170</item>
+        <item>250</item>
+        <item>220</item>
+        <item>200</item>
     </integer-array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
