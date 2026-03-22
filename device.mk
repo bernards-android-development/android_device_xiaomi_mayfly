@@ -30,6 +30,10 @@ PRODUCT_PACKAGES += \
     SystemUIResMayfly \
     WifiResMayfly
 
+# PowerHAL
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare-service.default
