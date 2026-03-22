@@ -5,6 +5,8 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq",
       "Values": [
         "9999999",
+        "2016000",
+        "1920000",
         "1804800",
         "1670400",
         "1555200",
@@ -28,6 +30,8 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq",
       "Values": [
         "9999999",
+        "2016000",
+        "1920000",
         "1804800",
         "1670400",
         "1555200",
@@ -68,7 +72,10 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq",
       "Values": [
         "9999999",
-        "2496000",
+        "2745600",
+        "2649600",
+        "2572800",
+        "2457600",
         "2342400",
         "2227200",
         "2112000",
@@ -94,7 +101,10 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq",
       "Values": [
         "9999999",
-        "2496000",
+        "2745600",
+        "2649600",
+        "2572800",
+        "2457600",
         "2342400",
         "2227200",
         "2112000",
@@ -138,6 +148,7 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq",
       "Values": [
         "9999999",
+        "2995200",
         "2918400",
         "2822400",
         "2707200",
@@ -166,6 +177,7 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq",
       "Values": [
         "9999999",
+        "2995200",
         "2918400",
         "2822400",
         "2707200",
@@ -301,6 +313,12 @@
       "Name": "GPUMaxFreq",
       "Path": "/sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/max_freq",
       "Values": [
+        "900000000",
+        "862000000",
+        "815000000",
+        "765000000",
+        "710000000",
+        "645000000",
         "580000000",
         "515000000",
         "439000000",
@@ -316,6 +334,12 @@
       "Name": "GPUMinFreq",
       "Path": "/sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/min_freq",
       "Values": [
+        "900000000",
+        "862000000",
+        "815000000",
+        "765000000",
+        "710000000",
+        "645000000",
         "580000000",
         "515000000",
         "439000000",
@@ -415,6 +439,7 @@
       "Name": "L3MinFreq",
       "Path": "/sys/devices/system/cpu/bus_dcvs/L3/boost_freq",
       "Values": [
+        "1804800",
         "1708800",
         "1593600",
         "1267200",
@@ -490,7 +515,7 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
-      "Value": "2496000"
+      "Value": "2745600"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -502,13 +527,13 @@
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "CPUBigPlusClusterMaxFreq",
       "Duration": 0,
-      "Value": "2918400"
+      "Value": "2995200"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "515000000"
+      "Value": "900000000"
     },
     {
       "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -862,7 +887,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "580000000"
+      "Value": "900000000"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -940,7 +965,7 @@
       "PowerHint": "Flipendo",
       "Node": "GPUMaxFreq",
       "Duration": 0,
-      "Value": "515000000"
+      "Value": "862000000"
     }
   ]
 }
