@@ -911,7 +911,7 @@
       "PowerHint": "TOUCH_DOWN",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 100,
-      "Value": "1440000"
+      "Value": "1324800"
     },
     {
       "PowerHint": "TOUCH_DOWN",
