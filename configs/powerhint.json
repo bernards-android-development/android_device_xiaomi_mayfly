@@ -220,15 +220,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "44",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "UclampTAMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
       "Values": [
@@ -780,12 +771,6 @@
       "Node": "CPULittleClusterMinFreq",
       "Duration": 1500,
       "Value": "9999999"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 1000,
-      "Value": "44"
     },
     {
       "PowerHint": "LAUNCH",
