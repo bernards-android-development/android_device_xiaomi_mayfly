@@ -905,18 +905,6 @@
       "Value": "1555000"
     },
     {
-      "PowerHint": "TOUCH_UP",
-      "Node": "UclampTAMin",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
-      "PowerHint": "TOUCH_UP",
-      "Node": "UclampFGMin",
-      "Duration": 0,
-      "Value": "0"
-    },
-    {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
       "Node": "CPUBWMinFreq",
       "Duration": 80,
