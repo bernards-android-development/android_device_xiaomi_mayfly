@@ -79,7 +79,7 @@
       "Values": [
         "0",
         "40",
-        "57"
+        "56"
       ],
       "DefaultIndex": 0,
       "ResetOnInit": true
@@ -336,7 +336,7 @@
       "PowerHint": "INTERACTION",
       "Node": "UclampTAMin",
       "Duration": 0,
-      "Value": "57"
+      "Value": "56"
     },
     {
       "PowerHint": "INTERACTION",
