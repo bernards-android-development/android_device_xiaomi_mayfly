@@ -42,6 +42,7 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq",
       "Values": [
         "9999999",
+        "2457600",
         "1766400",
         "1555200",
         "1324800",
@@ -67,6 +68,8 @@
       "Path": "/sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq",
       "Values": [
         "9999999",
+        "2592000",
+        "2361600",
         "1536000",
         "1283400",
         "787200"
@@ -436,20 +439,20 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "CPUBigPlusClusterMaxFreq",
-      "Duration": 4000,
-      "Value": "9999999"
+      "Node": "CPUBigPlusClusterMinFreq",
+      "Duration": 3000,
+      "Value": "2592000"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "CPUBigClusterMaxFreq",
-      "Duration": 4000,
-      "Value": "9999999"
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 3000,
+      "Value": "2457600"
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "CPULittleClusterMaxFreq",
-      "Duration": 4000,
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 3000,
       "Value": "9999999"
     },
     {
@@ -492,7 +495,7 @@
       "PowerHint": "LAUNCH",
       "Node": "CPUBWMinFreq",
       "Duration": 2000,
-      "Value": "3196000"
+      "Value": "1555000"
     },
     {
       "PowerHint": "LAUNCH",
